@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Log.i(TAG, "onCreate, ${window.decorView.systemUiVisibility}")
+        Log.i(TAG, "onCreate")
 
         defaultFlag = window.decorView.systemUiVisibility
         applyDayNight(DAY)
@@ -49,13 +49,13 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        Log.i(TAG, "onStart, ${window.decorView.systemUiVisibility}")
+        Log.i(TAG, "onStart")
 //        applyDayNight()
     }
 
     override fun onResume() {
         super.onResume()
-        Log.i(TAG, "onResume, ${window.decorView.systemUiVisibility}")
+        Log.i(TAG, "onResume")
     }
 
     override fun onPause() {
